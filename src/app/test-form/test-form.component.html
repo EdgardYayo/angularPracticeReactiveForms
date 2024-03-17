@@ -19,10 +19,13 @@
         </div>
         <div class="form-group">
             <label for="status">Project Status</label>
-            <select class="form-control" id="status" >
+            <select 
+                class="form-control" 
+                id="status" 
+                formControlName="projectStatus" 
+                >
             <option 
                 *ngFor="let status of projectStatus" 
-                formControlName="projectStatus" 
                 [value]="status">
                 {{ status }}
             </option>
